@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		366966731A65A0DF0013D5DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 366966721A65A0DF0013D5DB /* main.m */; };
+		366966761A65A0DF0013D5DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 366966751A65A0DF0013D5DB /* AppDelegate.m */; };
+		366966791A65A0DF0013D5DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 366966781A65A0DF0013D5DB /* ViewController.m */; };
+		3669667C1A65A0DF0013D5DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3669667A1A65A0DF0013D5DB /* Main.storyboard */; };
+		3669667E1A65A0DF0013D5DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3669667D1A65A0DF0013D5DB /* Images.xcassets */; };
+		366966811A65A0DF0013D5DB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3669667F1A65A0DF0013D5DB /* LaunchScreen.xib */; };
+		3669668D1A65A0DF0013D5DB /* ApplePayDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3669668C1A65A0DF0013D5DB /* ApplePayDemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		366966871A65A0DF0013D5DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 366966651A65A0DF0013D5DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3669666C1A65A0DF0013D5DB;
+			remoteInfo = ApplePayDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3669666D1A65A0DF0013D5DB /* ApplePayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplePayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		366966711A65A0DF0013D5DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		366966721A65A0DF0013D5DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		366966741A65A0DF0013D5DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		366966751A65A0DF0013D5DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		366966771A65A0DF0013D5DB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		366966781A65A0DF0013D5DB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3669667B1A65A0DF0013D5DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3669667D1A65A0DF0013D5DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		366966801A65A0DF0013D5DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		366966861A65A0DF0013D5DB /* ApplePayDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplePayDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3669668B1A65A0DF0013D5DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3669668C1A65A0DF0013D5DB /* ApplePayDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplePayDemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3669666A1A65A0DF0013D5DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		366966831A65A0DF0013D5DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		366966641A65A0DF0013D5DB = {
+			isa = PBXGroup;
+			children = (
+				3669666F1A65A0DF0013D5DB /* ApplePayDemo */,
+				366966891A65A0DF0013D5DB /* ApplePayDemoTests */,
+				3669666E1A65A0DF0013D5DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3669666E1A65A0DF0013D5DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3669666D1A65A0DF0013D5DB /* ApplePayDemo.app */,
+				366966861A65A0DF0013D5DB /* ApplePayDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3669666F1A65A0DF0013D5DB /* ApplePayDemo */ = {
+			isa = PBXGroup;
+			children = (
+				366966741A65A0DF0013D5DB /* AppDelegate.h */,
+				366966751A65A0DF0013D5DB /* AppDelegate.m */,
+				366966771A65A0DF0013D5DB /* ViewController.h */,
+				366966781A65A0DF0013D5DB /* ViewController.m */,
+				3669667A1A65A0DF0013D5DB /* Main.storyboard */,
+				3669667D1A65A0DF0013D5DB /* Images.xcassets */,
+				3669667F1A65A0DF0013D5DB /* LaunchScreen.xib */,
+				366966701A65A0DF0013D5DB /* Supporting Files */,
+			);
+			path = ApplePayDemo;
+			sourceTree = "<group>";
+		};
+		366966701A65A0DF0013D5DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				366966711A65A0DF0013D5DB /* Info.plist */,
+				366966721A65A0DF0013D5DB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		366966891A65A0DF0013D5DB /* ApplePayDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3669668C1A65A0DF0013D5DB /* ApplePayDemoTests.m */,
+				3669668A1A65A0DF0013D5DB /* Supporting Files */,
+			);
+			path = ApplePayDemoTests;
+			sourceTree = "<group>";
+		};
+		3669668A1A65A0DF0013D5DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3669668B1A65A0DF0013D5DB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3669666C1A65A0DF0013D5DB /* ApplePayDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 366966901A65A0DF0013D5DB /* Build configuration list for PBXNativeTarget "ApplePayDemo" */;
+			buildPhases = (
+				366966691A65A0DF0013D5DB /* Sources */,
+				3669666A1A65A0DF0013D5DB /* Frameworks */,
+				3669666B1A65A0DF0013D5DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ApplePayDemo;
+			productName = ApplePayDemo;
+			productReference = 3669666D1A65A0DF0013D5DB /* ApplePayDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		366966851A65A0DF0013D5DB /* ApplePayDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 366966931A65A0DF0013D5DB /* Build configuration list for PBXNativeTarget "ApplePayDemoTests" */;
+			buildPhases = (
+				366966821A65A0DF0013D5DB /* Sources */,
+				366966831A65A0DF0013D5DB /* Frameworks */,
+				366966841A65A0DF0013D5DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				366966881A65A0DF0013D5DB /* PBXTargetDependency */,
+			);
+			name = ApplePayDemoTests;
+			productName = ApplePayDemoTests;
+			productReference = 366966861A65A0DF0013D5DB /* ApplePayDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		366966651A65A0DF0013D5DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Kevin Chen";
+				TargetAttributes = {
+					3669666C1A65A0DF0013D5DB = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					366966851A65A0DF0013D5DB = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 3669666C1A65A0DF0013D5DB;
+					};
+				};
+			};
+			buildConfigurationList = 366966681A65A0DF0013D5DB /* Build configuration list for PBXProject "ApplePayDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 366966641A65A0DF0013D5DB;
+			productRefGroup = 3669666E1A65A0DF0013D5DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3669666C1A65A0DF0013D5DB /* ApplePayDemo */,
+				366966851A65A0DF0013D5DB /* ApplePayDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3669666B1A65A0DF0013D5DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3669667C1A65A0DF0013D5DB /* Main.storyboard in Resources */,
+				366966811A65A0DF0013D5DB /* LaunchScreen.xib in Resources */,
+				3669667E1A65A0DF0013D5DB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		366966841A65A0DF0013D5DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		366966691A65A0DF0013D5DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				366966791A65A0DF0013D5DB /* ViewController.m in Sources */,
+				366966761A65A0DF0013D5DB /* AppDelegate.m in Sources */,
+				366966731A65A0DF0013D5DB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		366966821A65A0DF0013D5DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3669668D1A65A0DF0013D5DB /* ApplePayDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		366966881A65A0DF0013D5DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3669666C1A65A0DF0013D5DB /* ApplePayDemo */;
+			targetProxy = 366966871A65A0DF0013D5DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3669667A1A65A0DF0013D5DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3669667B1A65A0DF0013D5DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3669667F1A65A0DF0013D5DB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				366966801A65A0DF0013D5DB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3669668E1A65A0DF0013D5DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3669668F1A65A0DF0013D5DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		366966911A65A0DF0013D5DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ApplePayDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		366966921A65A0DF0013D5DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ApplePayDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		366966941A65A0DF0013D5DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ApplePayDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ApplePayDemo.app/ApplePayDemo";
+			};
+			name = Debug;
+		};
+		366966951A65A0DF0013D5DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ApplePayDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ApplePayDemo.app/ApplePayDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		366966681A65A0DF0013D5DB /* Build configuration list for PBXProject "ApplePayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3669668E1A65A0DF0013D5DB /* Debug */,
+				3669668F1A65A0DF0013D5DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		366966901A65A0DF0013D5DB /* Build configuration list for PBXNativeTarget "ApplePayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				366966911A65A0DF0013D5DB /* Debug */,
+				366966921A65A0DF0013D5DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		366966931A65A0DF0013D5DB /* Build configuration list for PBXNativeTarget "ApplePayDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				366966941A65A0DF0013D5DB /* Debug */,
+				366966951A65A0DF0013D5DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 366966651A65A0DF0013D5DB /* Project object */;
+}
