@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		360C552F1A66D51900A29EAC /* app-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 360C552E1A66D51900A29EAC /* app-icon.png */; };
 		366966731A65A0DF0013D5DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 366966721A65A0DF0013D5DB /* main.m */; };
 		366966761A65A0DF0013D5DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 366966751A65A0DF0013D5DB /* AppDelegate.m */; };
 		366966791A65A0DF0013D5DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 366966781A65A0DF0013D5DB /* ViewController.m */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		360C552E1A66D51900A29EAC /* app-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "app-icon.png"; path = "../../../app-icon.png"; sourceTree = "<group>"; };
 		3669666D1A65A0DF0013D5DB /* ApplePayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplePayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		366966711A65A0DF0013D5DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		366966721A65A0DF0013D5DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 		366966861A65A0DF0013D5DB /* ApplePayDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplePayDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3669668B1A65A0DF0013D5DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3669668C1A65A0DF0013D5DB /* ApplePayDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplePayDemoTests.m; sourceTree = "<group>"; };
+		366966961A65A0FA0013D5DB /* ApplePayDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ApplePayDemo.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		3669666F1A65A0DF0013D5DB /* ApplePayDemo */ = {
 			isa = PBXGroup;
 			children = (
+				366966961A65A0FA0013D5DB /* ApplePayDemo.entitlements */,
 				366966741A65A0DF0013D5DB /* AppDelegate.h */,
 				366966751A65A0DF0013D5DB /* AppDelegate.m */,
 				366966771A65A0DF0013D5DB /* ViewController.h */,
@@ -96,6 +100,7 @@
 		366966701A65A0DF0013D5DB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				360C552E1A66D51900A29EAC /* app-icon.png */,
 				366966711A65A0DF0013D5DB /* Info.plist */,
 				366966721A65A0DF0013D5DB /* main.m */,
 			);
@@ -168,6 +173,12 @@
 				TargetAttributes = {
 					3669666C1A65A0DF0013D5DB = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 4N7YX63622;
+						SystemCapabilities = {
+							com.apple.OMC = {
+								enabled = 1;
+							};
+						};
 					};
 					366966851A65A0DF0013D5DB = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -201,6 +212,7 @@
 			files = (
 				3669667C1A65A0DF0013D5DB /* Main.storyboard in Resources */,
 				366966811A65A0DF0013D5DB /* LaunchScreen.xib in Resources */,
+				360C552F1A66D51900A29EAC /* app-icon.png in Resources */,
 				3669667E1A65A0DF0013D5DB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,20 +354,26 @@
 		366966911A65A0DF0013D5DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ApplePayDemo/ApplePayDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ApplePayDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		366966921A65A0DF0013D5DB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ApplePayDemo/ApplePayDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ApplePayDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -412,6 +430,7 @@
 				366966921A65A0DF0013D5DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		366966931A65A0DF0013D5DB /* Build configuration list for PBXNativeTarget "ApplePayDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +439,7 @@
 				366966951A65A0DF0013D5DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
