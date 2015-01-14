@@ -14,6 +14,9 @@
 @end
 
 @implementation ViewController
+
+NSMutableArray * addresss;
+
 - (IBAction)pay:(id)sender {
     
     PKPaymentRequest *request = [[PKPaymentRequest alloc] init];
@@ -23,11 +26,10 @@
     request.merchantCapabilities = PKMerchantCapabilityEMV | PKMerchantCapability3DS;
     request.merchantIdentifier = @"merchant.com.misty1";
     
-    PKPaymentSummaryItem *widget1 = [PKPaymentSummaryItem summaryItemWithLabel:@"Widget 1" amount:[NSDecimalNumber decimalNumberWithString:@"0.99"]];
-    PKPaymentSummaryItem *widget2 = [PKPaymentSummaryItem summaryItemWithLabel:@"Widget 2" amount:[NSDecimalNumber decimalNumberWithString:@"1.00"]];
-    PKPaymentSummaryItem *total = [PKPaymentSummaryItem summaryItemWithLabel:@"Grand Total" amount:[NSDecimalNumber decimalNumberWithString:@"1.99"]];
+   PKPaymentSummaryItem *widget = [PKPaymentSummaryItem summaryItemWithLabel:@"Platinum Fee" amount:[NSDecimalNumber decimalNumberWithString:@"300.00"]];
+    PKPaymentSummaryItem *total = [PKPaymentSummaryItem summaryItemWithLabel:@"Grand Total" amount:[NSDecimalNumber decimalNumberWithString:@"300.00"]];
     
-    request.paymentSummaryItems = @[widget1, widget2, total];
+    request.paymentSummaryItems = @[widget, total];
     
     PKPaymentAuthorizationViewController *paymentPane = [[PKPaymentAuthorizationViewController alloc] initWithPaymentRequest:request];
     paymentPane.delegate = self;
@@ -40,6 +42,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self setTitle:@"My Listings"];
+    
+    addresss = [[NSMutableArray alloc] initWithCapacity:5];
+    
+    [addresss addObject:@"2000 Riverside Dr Los Angeles 90039"];
+    [addresss addObject:@"Westside Towers, West - 11845 W. Olympic Blvd"];
+    [addresss addObject:@"12400 Wilshire Los Angeles, CA"];
+    [addresss addObject:@"21766 Wilshire Blvd - Landmark II"];
+    [addresss addObject:@"Gateway LA - 12424 Wilshire Blvd"];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -78,7 +89,7 @@
     
     long i = indexPath.row + 1;
     UILabel * label = (UILabel *)[cell viewWithTag:2];
-    label.text = @"Address";
+    label.text = [addresss objectAtIndex: i-1];
     
     
     UIImageView * imageView = (UIImageView *) [cell viewWithTag:4];
