@@ -56,11 +56,11 @@
     NSString * tokenString = [[NSString alloc] initWithData:[token paymentData] encoding:NSUTF8StringEncoding];
     
     completion( PKPaymentAuthorizationStatusSuccess);
-    [controller dismissViewControllerAnimated:YES completion:NULL];
+    
     
 }
 - (void)paymentAuthorizationViewControllerDidFinish: (PKPaymentAuthorizationViewController *)controller {
-    
+    [controller dismissViewControllerAnimated:YES completion:NULL];
 }
 
 #pragma mark - Table View
@@ -76,10 +76,16 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    //NSDate *object = self.objects[indexPath.row];
+    long i = indexPath.row + 1;
     UILabel * label = (UILabel *)[cell viewWithTag:2];
-    
     label.text = @"Address";
+    
+    
+    UIImageView * imageView = (UIImageView *) [cell viewWithTag:4];
+    NSString * imageName = [NSString stringWithFormat: @"im%ld.jpg", i];
+    
+    [imageView setImage: [UIImage imageNamed:imageName]];
+    
     return cell;
 }
 
