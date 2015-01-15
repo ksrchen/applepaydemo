@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		360C556D1A67233700A29EAC /* im4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 360C55681A67233700A29EAC /* im4.jpg */; };
 		360C556E1A67233700A29EAC /* im3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 360C55691A67233700A29EAC /* im3.jpg */; };
-		360C556F1A67233700A29EAC /* im2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 360C556A1A67233700A29EAC /* im2.jpg */; };
-		360C55701A67233700A29EAC /* im1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 360C556B1A67233700A29EAC /* im1.jpg */; };
 		360C55711A67233700A29EAC /* im5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 360C556C1A67233700A29EAC /* im5.jpg */; };
 		360C55731A672CBA00A29EAC /* app-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 360C55721A672CBA00A29EAC /* app-icon.png */; };
+		366794F31A683C3A00AD22A3 /* im2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 366794F11A683C3A00AD22A3 /* im2.jpg */; };
+		366794F41A683C3A00AD22A3 /* im1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 366794F21A683C3A00AD22A3 /* im1.jpg */; };
 		366966731A65A0DF0013D5DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 366966721A65A0DF0013D5DB /* main.m */; };
 		366966761A65A0DF0013D5DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 366966751A65A0DF0013D5DB /* AppDelegate.m */; };
 		366966791A65A0DF0013D5DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 366966781A65A0DF0013D5DB /* ViewController.m */; };
@@ -35,10 +35,10 @@
 /* Begin PBXFileReference section */
 		360C55681A67233700A29EAC /* im4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = im4.jpg; sourceTree = "<group>"; };
 		360C55691A67233700A29EAC /* im3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = im3.jpg; sourceTree = "<group>"; };
-		360C556A1A67233700A29EAC /* im2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = im2.jpg; sourceTree = "<group>"; };
-		360C556B1A67233700A29EAC /* im1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = im1.jpg; sourceTree = "<group>"; };
 		360C556C1A67233700A29EAC /* im5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = im5.jpg; sourceTree = "<group>"; };
 		360C55721A672CBA00A29EAC /* app-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon.png"; sourceTree = "<group>"; };
+		366794F11A683C3A00AD22A3 /* im2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = im2.jpg; sourceTree = "<group>"; };
+		366794F21A683C3A00AD22A3 /* im1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = im1.jpg; sourceTree = "<group>"; };
 		3669666D1A65A0DF0013D5DB /* ApplePayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplePayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		366966711A65A0DF0013D5DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		366966721A65A0DF0013D5DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -110,13 +110,13 @@
 		366966701A65A0DF0013D5DB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				366794F11A683C3A00AD22A3 /* im2.jpg */,
+				366794F21A683C3A00AD22A3 /* im1.jpg */,
 				360C55721A672CBA00A29EAC /* app-icon.png */,
 				366966711A65A0DF0013D5DB /* Info.plist */,
 				366966721A65A0DF0013D5DB /* main.m */,
 				360C55681A67233700A29EAC /* im4.jpg */,
 				360C55691A67233700A29EAC /* im3.jpg */,
-				360C556A1A67233700A29EAC /* im2.jpg */,
-				360C556B1A67233700A29EAC /* im1.jpg */,
 				360C556C1A67233700A29EAC /* im5.jpg */,
 			);
 			name = "Supporting Files";
@@ -225,14 +225,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				366794F41A683C3A00AD22A3 /* im1.jpg in Resources */,
 				3669667C1A65A0DF0013D5DB /* Main.storyboard in Resources */,
-				360C556F1A67233700A29EAC /* im2.jpg in Resources */,
 				360C556D1A67233700A29EAC /* im4.jpg in Resources */,
 				360C55711A67233700A29EAC /* im5.jpg in Resources */,
 				366966811A65A0DF0013D5DB /* LaunchScreen.xib in Resources */,
 				360C55731A672CBA00A29EAC /* app-icon.png in Resources */,
 				360C556E1A67233700A29EAC /* im3.jpg in Resources */,
-				360C55701A67233700A29EAC /* im1.jpg in Resources */,
+				366794F31A683C3A00AD22A3 /* im2.jpg in Resources */,
 				3669667E1A65A0DF0013D5DB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
