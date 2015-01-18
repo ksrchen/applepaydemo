@@ -20,6 +20,9 @@
 		3669667E1A65A0DF0013D5DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3669667D1A65A0DF0013D5DB /* Images.xcassets */; };
 		366966811A65A0DF0013D5DB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3669667F1A65A0DF0013D5DB /* LaunchScreen.xib */; };
 		3669668D1A65A0DF0013D5DB /* ApplePayDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3669668C1A65A0DF0013D5DB /* ApplePayDemoTests.m */; };
+		36E7830C1A6C222B00A521B1 /* im8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 36E783091A6C222B00A521B1 /* im8.jpg */; };
+		36E7830D1A6C222B00A521B1 /* im7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 36E7830A1A6C222B00A521B1 /* im7.jpg */; };
+		36E7830E1A6C222B00A521B1 /* im6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 36E7830B1A6C222B00A521B1 /* im6.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		3669668B1A65A0DF0013D5DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3669668C1A65A0DF0013D5DB /* ApplePayDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplePayDemoTests.m; sourceTree = "<group>"; };
 		366966961A65A0FA0013D5DB /* ApplePayDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ApplePayDemo.entitlements; sourceTree = "<group>"; };
+		36E783091A6C222B00A521B1 /* im8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = im8.jpg; sourceTree = "<group>"; };
+		36E7830A1A6C222B00A521B1 /* im7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = im7.jpg; sourceTree = "<group>"; };
+		36E7830B1A6C222B00A521B1 /* im6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = im6.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,9 @@
 		366966701A65A0DF0013D5DB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				36E783091A6C222B00A521B1 /* im8.jpg */,
+				36E7830A1A6C222B00A521B1 /* im7.jpg */,
+				36E7830B1A6C222B00A521B1 /* im6.jpg */,
 				366794F11A683C3A00AD22A3 /* im2.jpg */,
 				366794F21A683C3A00AD22A3 /* im1.jpg */,
 				360C55721A672CBA00A29EAC /* app-icon.png */,
@@ -227,8 +236,11 @@
 			files = (
 				366794F41A683C3A00AD22A3 /* im1.jpg in Resources */,
 				3669667C1A65A0DF0013D5DB /* Main.storyboard in Resources */,
+				36E7830D1A6C222B00A521B1 /* im7.jpg in Resources */,
+				36E7830C1A6C222B00A521B1 /* im8.jpg in Resources */,
 				360C556D1A67233700A29EAC /* im4.jpg in Resources */,
 				360C55711A67233700A29EAC /* im5.jpg in Resources */,
+				36E7830E1A6C222B00A521B1 /* im6.jpg in Resources */,
 				366966811A65A0DF0013D5DB /* LaunchScreen.xib in Resources */,
 				360C55731A672CBA00A29EAC /* app-icon.png in Resources */,
 				360C556E1A67233700A29EAC /* im3.jpg in Resources */,

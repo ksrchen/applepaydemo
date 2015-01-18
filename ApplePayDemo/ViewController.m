@@ -50,6 +50,9 @@ NSMutableArray * addresss;
     [addresss addObject:@"12400 Wilshire Los Angeles, CA"];
     [addresss addObject:@"21766 Wilshire Blvd - Landmark II"];
     [addresss addObject:@"Gateway LA - 12424 Wilshire Blvd"];
+    [addresss addObject:@"21800 Oxnard Street, Woodland Hills, CA 91367"];
+    [addresss addObject:@"G11990 San Vicente Blvd, Los Angeles, CA 90049"];
+    [addresss addObject:@"1901 Avenue of the Stars, Los Angeles, CA 90067"];
     
 }
 
@@ -81,7 +84,7 @@ NSMutableArray * addresss;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return [addresss count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
