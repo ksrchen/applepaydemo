@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2oi-eh-IuV">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,17 +19,21 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" tableViewCell="Bt2-yU-WSd" id="1SG-bs-oDC">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" tag="4" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ruf-fn-9yj">
-                                            <rect key="frame" x="8" y="8" width="120" height="100"/>
+                                        <imageView userInteractionEnabled="NO" tag="4" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ruf-fn-9yj">
+                                            <rect key="frame" x="8" y="8" width="128" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="128" id="QKJ-gJ-swb"/>
+                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="128" id="Xul-3E-TJu"/>
+                                                <constraint firstAttribute="height" constant="100" id="nFY-lO-cMB"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="Xul-3E-TJu"/>
+                                                </mask>
+                                            </variation>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gy0-86-hA9">
-                                            <rect key="frame" x="174" y="17" width="208" height="46"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KY9-R9-u4e">
-                                            <rect key="frame" x="174" y="68" width="126" height="39"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KY9-R9-u4e">
+                                            <rect key="frame" x="182" y="40" width="122" height="67"/>
                                             <state key="normal" title="MAKE PLATINUM">
                                                 <color key="titleColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -37,7 +42,31 @@
                                                 <action selector="pay:" destination="Nl5-pB-0Nf" eventType="touchUpInside" id="LtI-iF-Vvb"/>
                                             </connections>
                                         </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Gy0-86-hA9">
+                                            <rect key="frame" x="182" y="14" width="400" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="KY9-R9-u4e" firstAttribute="top" secondItem="Gy0-86-hA9" secondAttribute="bottom" constant="5" id="1hx-lE-PL3"/>
+                                        <constraint firstItem="Ruf-fn-9yj" firstAttribute="centerY" secondItem="Gy0-86-hA9" secondAttribute="centerY" constant="18" id="2cu-9h-edY"/>
+                                        <constraint firstItem="Ruf-fn-9yj" firstAttribute="width" secondItem="Gy0-86-hA9" secondAttribute="width" id="78a-ou-Mhw"/>
+                                        <constraint firstItem="Gy0-86-hA9" firstAttribute="leading" secondItem="Ruf-fn-9yj" secondAttribute="trailing" constant="46" id="7RS-KT-veM"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Gy0-86-hA9" secondAttribute="trailing" constant="10" id="8hi-PV-hUr"/>
+                                        <constraint firstItem="Ruf-fn-9yj" firstAttribute="top" secondItem="1SG-bs-oDC" secondAttribute="topMargin" id="9mL-PR-jJc"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="KY9-R9-u4e" secondAttribute="bottom" constant="-2" id="J7c-Tu-ID3"/>
+                                        <constraint firstItem="KY9-R9-u4e" firstAttribute="leading" secondItem="Ruf-fn-9yj" secondAttribute="trailing" constant="46" id="OWM-vO-KEY"/>
+                                        <constraint firstItem="Gy0-86-hA9" firstAttribute="top" secondItem="1SG-bs-oDC" secondAttribute="topMargin" constant="6" id="Szi-pM-ef7"/>
+                                        <constraint firstItem="Ruf-fn-9yj" firstAttribute="leading" secondItem="1SG-bs-oDC" secondAttribute="leadingMargin" id="fYY-0J-1gN"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="2cu-9h-edY"/>
+                                            <exclude reference="78a-ou-Mhw"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
