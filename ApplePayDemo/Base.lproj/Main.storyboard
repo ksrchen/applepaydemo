@@ -75,7 +75,13 @@
                             <outlet property="delegate" destination="Nl5-pB-0Nf" id="9qq-rT-laS"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="aE5-1I-XmW"/>
+                    <navigationItem key="navigationItem" id="aE5-1I-XmW">
+                        <barButtonItem key="rightBarButtonItem" title="Sign In" id="TH7-wa-3Cy">
+                            <connections>
+                                <action selector="signIn:" destination="Nl5-pB-0Nf" id="GgE-ZO-GIp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sqY-oI-TJN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

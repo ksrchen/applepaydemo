@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <PassKit/PassKit.h>
+#import <LocalAuthentication/LocalAuthentication.h>
 
 @interface ViewController ()
 <PKPaymentAuthorizationViewControllerDelegate>
@@ -111,4 +112,95 @@ NSMutableArray * addresss;
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     }
 
+- (IBAction)signIn:(id)sender {
+    
+     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString * loggedIn = [defaults objectForKey:@"loggedin"];
+    if ([loggedIn length] <= 0)
+    {
+        [self showLogin];
+    }else{
+        
+        LAContext * localAuthenticationContext =[[LAContext alloc] init];
+        __autoreleasing NSError * authenticationError;
+        NSString * localizedReasonString = NSLocalizedString(@"authentication", @"Please login is Touch ID.");
+        
+        if ([localAuthenticationContext canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&authenticationError]){
+            [localAuthenticationContext
+             evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
+             localizedReason:localizedReasonString
+             reply:^(BOOL success, NSError *error) {
+                 if (success) {
+                     
+                 } else {
+                     if ([error code] == kLAErrorUserFallback ){
+                         [self showLogin];
+                     }
+                 }
+             }];
+        }else{
+            [self showLogin];
+        }
+        
+    }
+    
+}
+
+-(void) showLogin {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    UIAlertController * alertController = [UIAlertController alertControllerWithTitle:@"My Listing"
+                                                                              message:@"Please Sign In"
+                                                                       preferredStyle:UIAlertControllerStyleAlert];
+    
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField)
+     {
+         textField.placeholder = NSLocalizedString(@"Login", @"Login");
+     }];
+    
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField)
+     {
+         textField.placeholder = NSLocalizedString(@"Password", @"Password");
+         textField.secureTextEntry = YES;
+     }];
+    
+    
+    UIAlertAction *okAction = [UIAlertAction
+                               actionWithTitle:NSLocalizedString(@"OK", @"OK action")
+                               style:UIAlertActionStyleDestructive
+                               handler:^(UIAlertAction *action)
+                               {
+                                   UITextField *login = alertController.textFields.firstObject;
+                                   UITextField *password = alertController.textFields.lastObject;
+                                   NSString * pwd = password.text;
+                                   NSString * user = login.text;
+                                   if ([pwd length] > 1 && [user length] > 1 && [pwd compare:@"42"] == NSOrderedSame){
+                                       [defaults setObject:user forKey:@"loggedin"];
+                                       [defaults synchronize];
+                                   }
+                                   else{
+                                       [defaults removeObjectForKey:@"loggedin"];
+                                       [defaults synchronize];
+                                       [alertController setMessage:@"Login failed. Please try again."];
+                                       [self presentViewController:alertController animated:YES completion:nil];
+                                   }
+                                   
+                               }];
+    
+    UIAlertAction *cancelAction = [UIAlertAction
+                                   actionWithTitle:NSLocalizedString(@"Cancel", @"Cancel action")
+                                   style:UIAlertActionStyleCancel
+                                   handler:^(UIAlertAction *action)
+                                   {
+                                       
+                                       
+                                   }];
+    
+    [alertController addAction:okAction];
+    [alertController addAction:cancelAction];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
+
+    
+}
 @end

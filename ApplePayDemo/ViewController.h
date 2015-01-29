@@ -10,6 +10,7 @@
 
 @interface ViewController : UITableViewController
 
+- (IBAction)signIn:(id)sender;
 
 @end
 
